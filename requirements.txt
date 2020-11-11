@@ -1,0 +1,2 @@
+1) using Django 3.0 version
+2) python version 3
