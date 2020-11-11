@@ -1,0 +1,16 @@
+{% extends 'base.html' %} <!--for using navbar -->
+
+{% block content %}
+<div class="container">
+    <h1>Welcome</h1>
+    <p>
+        You can log in here!
+    </p>
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}   <!-- using for protect from unauthorized user-->
+        {{ form.as_p }}    <!-- used for displaying login column  -->
+        <button type="submit">Login</button>  <!-- used for submitting user information-->
+    </form>
+</div>
+{% endblock %}
